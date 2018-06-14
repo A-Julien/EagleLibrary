@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2303,16 +2304,17 @@ INFINEON http://www.infineon.com/upload/Image/Packages/hlgf1015.gif</description
 </symbol>
 <symbol name="LM2577">
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.28" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-7.62" y1="-7.62" x2="17.78" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-7.62" x2="17.78" y2="7.62" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="8.28" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VIN" x="-10.16" y="5.08" length="short" direction="pwr"/>
+<pin name="VIN" x="-2.54" y="10.16" length="short" direction="pwr" rot="R270"/>
 <pin name="COMP" x="-10.16" y="0" length="short" direction="pas"/>
-<pin name="VSW" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="FB" x="12.7" y="0" length="short" direction="in" rot="R180"/>
-<pin name="GND" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="VSW" x="12.7" y="10.16" length="short" rot="R270"/>
+<pin name="FB" x="20.32" y="0" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="5.08" y="-10.16" length="short" direction="pwr" rot="R90"/>
+<pin name="TAP" x="-10.16" y="-5.08" length="short"/>
 </symbol>
 <symbol name="LM2670">
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
@@ -4487,6 +4489,7 @@ Vin 5V to 28V (transients 40V), reset and comparator outputs, 200µA supply curr
 <connect gate="A" pin="COMP" pad="1"/>
 <connect gate="A" pin="FB" pad="2"/>
 <connect gate="A" pin="GND" pad="3"/>
+<connect gate="A" pin="TAP" pad="6"/>
 <connect gate="A" pin="VIN" pad="5"/>
 <connect gate="A" pin="VSW" pad="4"/>
 </connects>

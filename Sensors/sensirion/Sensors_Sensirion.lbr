@@ -109,7 +109,7 @@
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.1795" y="8.14363125" size="1.78141875" layer="95">&gt;NAME</text>
+<text x="-10.1795" y="8.14363125" size="1.78141875" layer="95">SHT31</text>
 <text x="-12.7192" y="-12.7192" size="1.781340625" layer="96">&gt;VALUE</text>
 <pin name="SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="ADDR" x="-15.24" y="-5.08" length="middle" direction="in"/>
@@ -124,7 +124,14 @@
 </symbols>
 <devicesets>
 <deviceset name="SHT31-DIS-B" prefix="U" uservalue="yes">
-<description>SHT31 Series 5.5 V 800 µA Surface Mount Humidity and Temperature Sensor</description>
+<description>&lt;p&gt;&lt;b&gt;Sensirion &lt;/b&gt;Aluminium Electrolytic Capacitor&lt;b&gt; HT31 Series 5.5 V 800 µA [SMT]&lt;/b&gt;&lt;/p&gt;
+SHT31 Series 5.5 V 800 µA Surface Mount Humidity and Temperature Sensor
+
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;author&gt;&lt;i&gt;Author:&lt;br /&gt;
+Alaimo Julien, contact : julien.alaimo@gmail.com</description>
 <gates>
 <gate name="G$1" symbol="SHT31-DIS-B" x="0" y="0"/>
 </gates>
