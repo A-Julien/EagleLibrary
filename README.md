@@ -14,3 +14,8 @@ project
 │             Readme.md (list available devices in lib)
 
 ```
+
+#### To get all componant name of a lib : 
+```
+cat LIBNAME | grep "package name=" | cut -c16- | rev | sed 's/$/ -/' | rev
+```
