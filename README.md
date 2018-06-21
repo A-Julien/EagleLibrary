@@ -17,5 +17,5 @@ project
 #### To get all componant name of a lib : 
 
 ```
-cat LIBNAME | grep "package name=" | cut -c16- | rev | sed 's/$/ -/' | rev
+cat LIBNAME | grep "package name=" | cut -c16- | rev | cut -c3- | sed 's/$/ -/' | rev
 ```
